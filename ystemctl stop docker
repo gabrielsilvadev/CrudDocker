@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2021-02-07 16:35:48 -03; 3h 11min ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1385 (dockerd)
+      Tasks: 16
+     Memory: 246.9M
+     CGroup: /system.slice/docker.service
+             └─1385 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Feb 07 19:00:00 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:00:00.825297610-03:00" level=error msg="Handler for POST /v1.41/images/create returned error: Head https://regcontimg.azurecr.io/v2/rabbitmq/manifests/3.7: unauthorized: authentication required, visit https://aka.ms/acr/authorization for more information."
+Feb 07 19:39:28 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:39:28.761399478-03:00" level=info msg="Layer sha256:fece006913f93fe0a13ae5707d45ed3984abcc3cb4ba4f00e354ee8d50107296 cleaned up"
+Feb 07 19:43:29 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:43:28.879915922-03:00" level=error msg="stream copy error: reading from a closed fifo"
+Feb 07 19:43:29 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:43:28.880208312-03:00" level=error msg="stream copy error: reading from a closed fifo"
+Feb 07 19:43:40 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:43:40.310107535-03:00" level=error msg="3cc08aa78643fd2c450a9a34a9134b6d47f7d14398660b3d43b7cc3f43e17b16 cleanup: failed to delete container from containerd: no such container"
+Feb 07 19:43:42 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:43:42.427627675-03:00" level=error msg="Handler for POST /v1.41/containers/3cc08aa78643fd2c450a9a34a9134b6d47f7d14398660b3d43b7cc3f43e17b16/start returned error: dial unix \x00/run/containerd/s/4ddb7c6f21cab20f343910050f2174adef8edfd559ec255f02136aedc074a7f9: connect: connection refused: unknown"
+Feb 07 19:44:14 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:44:14.897158817-03:00" level=error msg="stream copy error: reading from a closed fifo"
+Feb 07 19:44:14 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:44:14.897182702-03:00" level=error msg="stream copy error: reading from a closed fifo"
+Feb 07 19:44:23 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:44:23.838102328-03:00" level=error msg="8d54d958a435a5d84c974917e2f3ae32bd90041eba0bcf3512c16838400a16eb cleanup: failed to delete container from containerd: no such container"
+Feb 07 19:44:25 srlobak-550XCJ-550XCR dockerd[1385]: time="2021-02-07T19:44:25.502226786-03:00" level=error msg="Handler for POST /v1.41/containers/8d54d958a435a5d84c974917e2f3ae32bd90041eba0bcf3512c16838400a16eb/start returned error: dial unix \x00/run/containerd/s/d7a43c07002cf3ba1e2b7a4c09feda18bb431d20d6f5b8c8e80f95e339a745dc: connect: connection refused: unknown"

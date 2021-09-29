@@ -1,0 +1,7 @@
+const { json } = require('express')
+const express = require('express')
+const route = require('./route')
+const app = express()
+app.use(JSON)
+app.use(route)
+app.listen(3333)
